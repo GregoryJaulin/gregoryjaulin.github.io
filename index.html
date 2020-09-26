@@ -151,7 +151,7 @@
         const nav_link = document.querySelectorAll('#nav-list li')
         const menu_btn = document.getElementById('menu_btn')
 
-        document.style.setProperty('--inner-height', `${window.innerHeight}px`)
+        header.style.addProperty('--inner-height', `${window.innerHeight}px`)
 
         nav_link.forEach(elem => {
             elem.innerHTML = `<p>${elem.getAttribute("data-txt")}</p>`
