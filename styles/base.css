@@ -6,6 +6,7 @@
     --shadows: rgba(0, 0, 0, .7);
     --header-bg-url: url("../resources/dev-full.jpg");
     --present-bg-url: url("../resources/about-full.jpg");
+    --inner-height: 100vh;
 }
 
 * {
