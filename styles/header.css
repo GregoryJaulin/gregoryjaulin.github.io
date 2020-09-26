@@ -1,6 +1,5 @@
 header {
     --header-bg-position: 75%;
-    --inner-height: 100vh;
     
     position: relative;
     overflow: hidden;

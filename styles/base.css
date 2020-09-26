@@ -49,6 +49,8 @@ a {
 }
 
 body {
+    --inner-height: 100vh;
+    
     background-color: var(--base_color);
 }
 
