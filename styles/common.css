@@ -10,10 +10,6 @@
 
 .title {
     height: fit-content;
-}
-
-.title > * {
-    display: inline-block;
     text-transform: uppercase;
 }
 
@@ -25,21 +21,14 @@
 
 .title h3 {
     position: relative;
-    top: -1.75rem;
+    top: -2rem;
+
+    display: inline-block;
+    padding-top: .5rem;
     
     font-family: Montserrat;
     font-size: 2.5rem;
     font-weight: 500;
     color: var(--secondary_color_op);
-}
-
-.title h3::before {
-    content: '';
-    position: absolute;
-    top: -1rem;
-
-    height: .2rem;
-    width: 100%;
-
-    background-color: var(--secondary_color);
+    border-top: solid .3rem var(--secondary_color);
 }

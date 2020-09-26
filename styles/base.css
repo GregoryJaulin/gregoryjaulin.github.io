@@ -4,6 +4,8 @@
     --base_color_op: #191919ee;
     --secondary_color_op: #c9c9c988;
     --shadows: rgba(0, 0, 0, .7);
+    --header-bg-url: url("../resources/dev-full.jpg");
+    --present-bg-url: url("../resources/about-full.jpg");
 }
 
 * {

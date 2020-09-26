@@ -21,7 +21,7 @@
 
     height: 100%;
     width: 100%;
-    background: url(../resources/about.jpg) fixed no-repeat;
+    background: var(--present-bg-url) fixed no-repeat;
     background-size: cover;
     background-position-y: var(--present-bg-position);
 

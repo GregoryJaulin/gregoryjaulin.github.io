@@ -41,41 +41,6 @@
     transform: skewY(-1deg);
 }
 
-@media (max-width: 1200px) {
-    #presentation {
-        grid-template-columns: auto-fit;
-        justify-items: center;
-    }
-
-    #descr {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }
-
-    #knowledge .grid-container div:last-child {
-        grid-row: span 2;
-    }
-}
-
-@media (max-width: 810px) {
-    :root {
-        font-size: 40%;
-    }
-    #presentation {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    #descr {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    #knowledge .grid-container div:last-child {
-        grid-row: 3;
-    }
-}
-
 #knowledge .grid-item {
     justify-self: stretch;
 
