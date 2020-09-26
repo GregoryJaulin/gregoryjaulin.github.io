@@ -1,0 +1,12 @@
+#work {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    justify-content: center;
+
+    padding: 10rem 10rem;
+    height: 100vh;
+
+    text-align: center;
+    font-size: 5rem;
+    color: var(--secondary_color);
+}

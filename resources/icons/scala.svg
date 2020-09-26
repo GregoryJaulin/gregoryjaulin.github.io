@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+	<linearGradient id="gradient_scala_1" gradientUnits="userSpaceOnUse" x1="1.6694" y1="510.8262" x2="2.7212" y2="510.8262" gradientTransform="matrix(256 0 0 96 -306 -48716)">
+		<stop  offset="0" style="stop-color:#4F4F4F"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	<path fill="url(#gradient_scala_1)" d="M121.333,306.5v33.667c0,5.674,122.438,15.18,202.209,33.666l0,0
+		c38.537-8.933,67.124-19.956,67.124-33.666l0,0V306.5c0-13.703-28.586-24.734-67.124-33.667l0,0
+		C243.771,291.324,121.333,300.828,121.333,306.5"/>
+		
+	<linearGradient id="gradient_scala_2" gradientUnits="userSpaceOnUse" x1="1.6694" y1="510.7568" x2="2.7212" y2="510.7568" gradientTransform="matrix(256 0 0 96 -306 -48844)">
+		<stop  offset="0" style="stop-color:#4F4F4F"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	<path fill="url(#gradient_scala_2)" d="M121.333,171.833V205.5c0,5.675,122.438,15.181,202.209,33.667l0,0
+		c38.537-8.933,67.124-19.957,67.124-33.667l0,0v-33.667c0-13.702-28.586-24.733-67.124-33.666l0,0
+		C243.771,156.657,121.333,166.162,121.333,171.833"/>
+		
+	<linearGradient id="gradient_scala_3" gradientUnits="userSpaceOnUse" x1="1.6694" y1="511.1172" x2="2.7212" y2="511.1172" gradientTransform="matrix(256 0 0 160 -306 -81388)">
+		<stop  offset="0" style="stop-color:#C40000"/>
+		<stop  offset="1" style="stop-color:#FF0000"/>
+	</linearGradient>
+	<path fill="url(#gradient_scala_3)" d="M121.333,373.833v101c0-8.417,269.333-25.25,269.333-67.333l0,0v-101
+		C390.667,348.583,121.333,365.417,121.333,373.833"/>
+		
+	<linearGradient id="gradient_scala_4" gradientUnits="userSpaceOnUse" x1="1.6694" y1="511.0762" x2="2.7212" y2="511.0762" gradientTransform="matrix(256 0 0 160 -306 -81516)">
+		<stop  offset="0" style="stop-color:#C40000"/>
+		<stop  offset="1" style="stop-color:#FF0000"/>
+	</linearGradient>
+	<path fill="url(#gradient_scala_4)" d="M121.333,239.167v101c0-8.417,269.333-25.25,269.333-67.334l0,0v-101
+		C390.667,213.917,121.333,230.75,121.333,239.167"/>
+		
+	<linearGradient id="gradient_scala_5" gradientUnits="userSpaceOnUse" x1="1.6694" y1="511.0342" x2="2.7212" y2="511.0342" gradientTransform="matrix(256 0 0 160 -306 -81644)">
+		<stop  offset="0" style="stop-color:#C40000"/>
+		<stop  offset="1" style="stop-color:#FF0000"/>
+	</linearGradient>
+	<path fill="url(#gradient_scala_5)" d="M121.333,104.5v101c0-8.417,269.333-25.25,269.333-67.333l0,0v-101
+		C390.667,79.25,121.333,96.084,121.333,104.5"/>
+</svg>

@@ -1,0 +1,95 @@
+#presentation {
+    --present-bg-position: 90%;
+
+    position: relative;
+    grid-template-columns: 35% auto;
+    grid-template-rows: 20rem auto;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    grid-auto-flow: dense;
+
+    padding: 8rem;
+
+    min-height: 100vh;
+    color: var(--secondary_color);
+}
+
+#presentation::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+    background: url(../resources/about.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position-y: var(--present-bg-position);
+
+    opacity: .5;
+}
+
+/* -------------------------------------------------- */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#contact div {
+    display: flex;
+    align-items: center;
+
+    font-size: 2.75rem;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------- */
+
+#descr {
+    grid-column-start: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+
+    position: relative;
+
+    text-align: justify;
+    font-size: 2.75rem;
+    height: fit-content;
+    width: 90%;
+
+    padding: 6rem;
+    backdrop-filter: blur(.75rem);
+
+    box-shadow: 2rem 2rem 5rem var(--shadows);
+}
+
+#descr strong {
+    font-weight: 600;
+}
+
+#descr::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    border-radius: inherit;
+
+    border: solid .2rem var(--secondary_color); 
+}
+
+#descr p a {
+    position: relative;
+    display: inline-block;
+    font-size: inherit;
+    color: #8a6e5d;
+}
+
+#descr p a:hover {
+    color: var(--secondary_color_op);
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+		<linearGradient id="gradient_webstorm_1" gradientUnits="userSpaceOnUse" x1="2.2832" y1="512.252" x2="2.7852" y2="510.6994" gradientTransform="matrix(219.6 0 0 -255.6 -306.1016 130983.3516)">
+			<stop  offset="0.28" style="stop-color:#00CDD7"/>
+			<stop  offset="0.94" style="stop-color:#2086D7"/>
+		</linearGradient>
+		<polygon fill="url(#gradient_webstorm_1)" points="100.244,427.731 43,87.597 149.5,43.666 216.728,83.604 279.297,50.322 408.428,100.244 
+			335.875,469 		"/>
+		
+		<linearGradient id="gradient_webstorm_2" gradientUnits="userSpaceOnUse" x1="2.5059" y1="512.0586" x2="3.5107" y2="510.8999" gradientTransform="matrix(185.6 0 0 -236 -235.7266 120948)">
+			<stop  offset="0.14" style="stop-color:#FFF045"/>
+			<stop  offset="0.37" style="stop-color:#00CDD7"/>
+		</linearGradient>
+		<polygon fill="url(#gradient_webstorm_2)" points="469,187.44 413.753,51.653 314.575,43 160.15,190.769 201.419,381.803 279.297,435.719 
+			469,323.229 422.406,236.031 		"/>
+		
+		<linearGradient id="gradient_webstorm_3" gradientUnits="userSpaceOnUse" x1="285.8535" y1="911.4668" x2="298.1096" y2="929.2486" gradientTransform="matrix(51.2 0 0 -80 -101.1992 41112)">
+			<stop  offset="0.28" style="stop-color:#00CDD7"/>
+			<stop  offset="0.94" style="stop-color:#2086D7"/>
+		</linearGradient>
+		<polygon fill="url(#gradient_webstorm_3)" points="383.8,166.807 422.406,236.031 469,187.44 435.053,102.906 		"/>
+		<rect x="122.875" y="122.875" width="266.25" height="266.25"/>
+		<path fill="#FFFFFF" d="M148.169,339.203h99.844v16.641h-99.844V339.203z M278.631,252.006l13.978-17.306
+			c9.984,7.987,19.969,13.313,32.616,13.313c9.984,0,15.975-3.994,15.975-10.65c0-5.99-3.994-9.318-21.966-13.978
+			c-21.966-5.991-35.944-11.981-35.944-33.947v-0.666c0-19.969,15.975-33.281,37.941-33.281
+			c14.725-0.063,29.037,4.865,40.603,13.979l-12.647,18.638c-8.036-6.28-17.779-9.992-27.956-10.65
+			c-8.653,0-13.979,3.994-13.979,9.984c0,7.322,4.66,9.984,23.297,14.644c21.966,5.991,34.613,13.979,34.613,33.281
+			c0,21.966-16.641,34.613-39.938,34.613C308.125,269.35,291.725,263.023,278.631,252.006z M257.331,157.487l-16.641,63.9
+			l-18.637-63.9h-18.638l-18.637,63.9l-16.641-63.9h-25.959l31.95,110.494h20.635l17.972-63.9l17.972,63.9h20.635l31.95-110.494
+			H257.331z"/>
+</svg>

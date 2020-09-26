@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grégory Jaulin • Portfolio</title>
+	<link rel="shortcut icon" type="image/png" href="resources\favicon.png">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/presentation.css">
+    <link rel="stylesheet" type="text/css" href="styles/knowledge.css">
+    <link rel="stylesheet" type="text/css" href="styles/work.css">
+</head>
+<body>
+    <header id="header">
+        <input type="checkbox" name="menu_checkbox" id="menu_btn">
+        <label for="menu_btn">MENU</label>
+
+        <nav id="navbar">
+            <ul id="nav-list">
+                <li data-link="presentation" data-txt="ABOUT ME"><a href="#presentation">ABOUT ME</a></li>
+                <li data-link="knowledge" data-txt="KNOWLEDGE"><a href="#knowledge">KNOWLEDGE</a></li>
+                <li data-link="work" data-txt="PROJECTS"><a href="#work">PROJECTS</a></li>
+            </ul>
+        </nav>
+
+        <div id="names">
+            <h1 class="alt-font">Jaulin Grégory</h1>
+            <h2>Backend Developer</h2>
+        </div>
+
+        <svg id="arrows_down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <polygon points="30.918,1.088 30.918,7.9 16.071,16.532 0.832,7.679 0.832,0.868 16.071,9.719 "/>
+            <polygon points="30.918,1.088 30.918,7.9 16.071,16.532 0.832,7.679 0.832,0.868 16.071,9.719 "/>
+            <polygon points="30.918,1.088 30.918,7.9 16.071,16.532 0.832,7.679 0.832,0.868 16.071,9.719 "/>
+        </svg>
+    </header>
+
+    <main>
+        <section id="presentation" class="grid-container">
+            <div class="title">
+                <h2 class="alt-font">Resume</h2>
+                <h3>About me</h3>
+            </div>
+
+            <div id="contact">
+                <div>
+                    <img src="./resources/icons/address.svg" alt="pin_icon" class="icon">
+                    <p class="can-select">43 rue de Rennes<br>35510 Cesson-Sévigné</p>
+                </div>
+
+                <div>
+                    <img src="./resources/icons/phone.svg" alt="phone_icon" class="icon">
+                    <p class="can-select">06.16.64.16.09</p>
+                </div>
+
+                <div>
+                    <img src="./resources/icons/mail.svg" alt="mail_icon" class="icon">
+                    <p class="can-select">jaulin.gregory@gmail.com</p>
+                </div>
+            </div>
+
+            <div id=descr>
+                <p>
+                    Passionné d'informatique et de nouvelles technologies en général depuis mon enfance, c'est à partir
+                    du lycée que j'ai commencé à me tourner vers le développement.<br><br>                    
+                    J'ai débuté mon apprentissage avec <strong>Java</strong>, d'abord en autodidacte, puis je me suis dirigé vers 
+                    <a href="https://istic.univ-rennes1.fr/licence-informatique" target="_blank" rel="noopener noreferrer">une formation</a>
+                    dédiée au développement, où j'ai pu apprendre différentes méthodes de travail 
+                    <em>(méthode dite <strong>AGILE</strong> notamment)</em> et travailler également de nouveaux langages.<br><br>
+                    Tout juste diplômé et désireux d'acquérir de nouvelles compétences, je suis ouvert à de nouvelles 
+                    opportunités professionnelles, au niveau <strong>Back-End</strong> ou <strong>Front-End</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section id="knowledge">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./resources/icons/gear.svg" alt="gear_icon" class="icon">
+                    <h4>Tools</h4>
+                    <p>I used to work with MongoDB, MySQL<br>and on both Linux and Windows.</p>
+                    <ul class="icon-list">
+                        <li class="icon" alt="MongoDB">
+                            <img src="./resources/icons/mongodb.svg" alt="MongoDB" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="Linux">
+                            <img src="./resources/icons/tux.svg" alt="Linux" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="Windows">
+                            <img src="./resources/icons/windows.svg" alt="Windows" class="icon no-wrap">
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <img src="./resources/icons/devices.svg" alt="device_icon" class="icon">
+                    <h4>Software</h4>
+                    <p>I mainly use Eclipse, Visual Studio Code and WebStorm to develop and PuTTY as SSH Client.</p>
+                    <ul class="icon-list">
+                        <li class="icon" alt="Eclipse">
+                            <img src="./resources/icons/eclipse.svg" alt="Eclipse" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="WebStorm">
+                            <img src="./resources/icons/webstorm.svg" alt="WebStorm" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="VS Code">
+                            <img src="./resources/icons/vs_code.svg" alt="VS Code" class="icon no-wrap">
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <img src="./resources/icons/languages.svg" alt="language_icon" class="icon">
+                    <h4>Languages</h4>
+                    <p>Mostly Java / Scala developer, I’ve been working with C, Javascript and web technologies (HTML5 and CSS3).</p>
+                    <ul class="icon-list">
+                        <li class="icon" alt="Javascript">
+                            <img src="./resources/icons/js.svg" alt="Javascript" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="Java">
+                            <img src="./resources/icons/java.svg" alt="Java" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="HTML5">
+                            <img src="./resources/icons/html.svg" alt="HTML5" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="Scala">
+                            <img src="./resources/icons/scala.svg" alt="Scala" class="icon no-wrap">
+                        </li>
+                        <li class="icon" alt="CSS3">
+                            <img src="./resources/icons/css.svg" alt="CSS3" class="icon no-wrap">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="grid-container">
+            
+        </section>
+    </main>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        const header = document.getElementById('header')
+        const present = document.getElementById('presentation')
+        const nav_link = document.querySelectorAll('#nav-list li')
+        const menu_btn = document.getElementById('menu_btn')
+
+        nav_link.forEach(elem => {
+            elem.innerHTML = `<p>${elem.getAttribute("data-txt")}</p>`
+
+            const scrollElem = document.getElementById(elem.getAttribute('data-link'))
+            if(scrollElem != undefined) 
+                elem.addEventListener('click', () => {
+                    scrollElem.scrollIntoView()
+                    menu_btn.checked = false
+                })
+        })
+
+        document.addEventListener('scroll', () => {
+            var scrollBarPosition = window.pageYOffset | document.body.scrollTop
+            
+            header.style.setProperty('--header-bg-position', `${75 - (scrollBarPosition / header.offsetHeight * 25)}%`)
+            present.style.setProperty('--present-bg-position', `${75 - (scrollBarPosition / present.offsetHeight * 25)}%`)
+        })
+    </script>
+</body>
+</html>

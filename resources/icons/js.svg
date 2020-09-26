@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+	<radialGradient id="gradient_js" cx="146" cy="124" r="246.6677" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#EDED26;stop-opacity:0.95"/>
+		<stop  offset="1" style="stop-color:#EFC725"/>
+	</radialGradient>
+	<polygon fill="url(#gradient_js)" points="451.73,34.022 416.066,433.536 255.763,477.978 95.908,433.603 60.27,34.022"/>
+	<polygon fill="#EBEBEB" points="369.335,185.652 320.142,185.652 315.415,137.5 208.926,137.5 201.859,214.407 369.335,214.434 
+		355.885,364.894 255.671,392.66 154.983,364.894 148.126,294.882 197.319,294.882 200.807,327.019 255.381,341.771 
+		310.088,326.992 315.773,263.442 148.285,263.415 164.616,85.123 360.083,85.123"/>
+</svg>

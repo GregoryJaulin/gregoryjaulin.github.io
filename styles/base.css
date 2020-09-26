@@ -1,0 +1,60 @@
+:root {
+    --base_color: #191919;
+    --secondary_color: #c9c9c9;
+    --base_color_op: #191919ee;
+    --secondary_color_op: #c9c9c988;
+    --shadows: rgba(0, 0, 0, .7);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+}
+
+.can-select {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.alt-font {
+    font-family: Kalam;
+}
+
+body {
+    background-color: var(--base_color);
+}
+
+strong, em {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
