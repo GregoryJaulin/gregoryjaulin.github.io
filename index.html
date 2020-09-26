@@ -153,8 +153,8 @@
         const body = document.getElementsByTagName('body')[0]
 
         body.style.setProperty('--inner-height', `${window.innerHeight}px`)
-        
-        window.addEventListener('orientationchange', () => {
+
+        window.addEventListener('resize', () => {
             body.style.setProperty('--inner-height', `${window.innerHeight}px`)
         })
 
