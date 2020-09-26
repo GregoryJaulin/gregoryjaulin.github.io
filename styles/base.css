@@ -6,9 +6,6 @@
     --shadows: rgba(0, 0, 0, .7);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-
 * {
     font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box;
