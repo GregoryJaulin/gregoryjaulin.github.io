@@ -10,7 +10,7 @@
 
     padding: 8rem;
 
-    min-height: var(--inner-height);
+    min-height: fit-content;
     color: var(--secondary_color);
 }
 
