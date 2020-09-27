@@ -94,7 +94,7 @@
     position: relative;
     border: none;
     border-radius: 0;
-    filter: grayscale(100%);
+    filter: saturate(50%);
 }
 
 #knowledge img.icon.no-wrap:hover {

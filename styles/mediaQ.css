@@ -2,13 +2,13 @@
     #presentation {
         grid-template-areas: "title contact"
                              "descr descr";
-        grid-template-columns: auto-fit;
         justify-items: center;
     }
 
     #knowledge .grid-container {
         grid-template-areas: "tools software"
                              "languages languages";
+        row-gap: 0rem;
     }
 }
 

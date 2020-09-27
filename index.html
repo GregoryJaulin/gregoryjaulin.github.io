@@ -152,10 +152,10 @@
         const menu_btn = document.getElementById('menu_btn')
         const body = document.getElementsByTagName('body')[0]
 
-        body.style.setProperty('--inner-height', `${window.innerHeight}px`)
+        body.style.setProperty('--inner-height', `${window.outerHeight}px`)
 
         window.addEventListener('resize', () => {
-            body.style.setProperty('--inner-height', `${window.innerHeight}px`)
+            body.style.setProperty('--inner-height', `${window.outerHeight}px`)
         })
 
         nav_link.forEach(elem => {
