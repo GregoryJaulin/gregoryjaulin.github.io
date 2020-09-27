@@ -1,16 +1,14 @@
 @media (max-width: 1200px) {
     #presentation {
+        grid-template-areas: "title contact"
+                             "descr descr";
         grid-template-columns: auto-fit;
         justify-items: center;
     }
 
-    #descr {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }
-
-    #knowledge .grid-container div:last-child {
-        grid-row: span 2;
+    #knowledge .grid-container {
+        grid-template-areas: "tools software"
+                             "languages languages";
     }
 }
 
@@ -21,17 +19,9 @@
         --present-bg-url: url("../resources/about.jpg");
     }
 
-    #presentation {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    #descr {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    #knowledge .grid-container div:last-child {
-        grid-row: 3;
+    #knowledge .grid-container {
+        grid-template-areas: "tools"
+                             "software"
+                             "languages";
     }
 }

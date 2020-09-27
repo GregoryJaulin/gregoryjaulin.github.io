@@ -2,6 +2,8 @@
     --present-bg-position: 90%;
 
     position: relative;
+    grid-template-areas: "title descr"
+                         "contact descr";
     grid-template-columns: 35% auto;
     grid-template-rows: 20rem auto;
     column-gap: 5rem;
@@ -28,9 +30,15 @@
     opacity: .5;
 }
 
+#presentation .title {
+    grid-area: title;
+}
+
 /* -------------------------------------------------- */
 
 #contact {
+    grid-area: contact;
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -47,8 +55,7 @@
 /* -------------------------------------------------- */
 
 #descr {
-    grid-column-start: 2;
-    grid-row: 1 / span 2;
+    grid-area: descr;
     align-self: center;
 
     position: relative;

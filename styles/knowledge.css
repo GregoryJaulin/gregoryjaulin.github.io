@@ -29,6 +29,7 @@
 /* -------------------------------------------------- */
 
 #knowledge .grid-container {
+    grid-template-areas: "tools software languages";
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     column-gap: 3rem;
     row-gap: 3rem;
@@ -126,4 +127,16 @@
 
 #knowledge .icon-list li:hover::before {
     display: block;
+}
+
+#knowledge .grid-container .grid-item:nth-child(1) {
+    grid-area: tools;
+}
+
+#knowledge .grid-container .grid-item:nth-child(2) {
+    grid-area: software;
+}
+
+#knowledge .grid-container .grid-item:nth-child(3) {
+    grid-area: languages;
 }
