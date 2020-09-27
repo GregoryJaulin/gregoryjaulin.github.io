@@ -154,7 +154,7 @@
 
         body.style.setProperty('--inner-height', `${window.outerHeight}px`)
 
-        window.addEventListener('resize', () => {
+        window.addEventListener('orientationchange', () => {
             body.style.setProperty('--inner-height', `${window.outerHeight}px`)
         })
 
