@@ -19,6 +19,14 @@
         --present-bg-url: url("../resources/about.jpg");
     }
 
+    .title h2 {
+        font-size: 6rem;
+    }
+
+    .title h3 {
+        font-size: 2rem;
+    }
+
     #knowledge .grid-container {
         grid-template-areas: "tools"
                              "software"
