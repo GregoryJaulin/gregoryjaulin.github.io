@@ -17,9 +17,13 @@
     <link rel="stylesheet" type="text/css" href="styles/knowledge.css">
     <link rel="stylesheet" type="text/css" href="styles/work.css">
     <link rel="stylesheet" type="text/css" href="styles/mediaQ.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+
+    <!--Scripts-->
+    <script src="https://kit.fontawesome.com/bff90100a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header">
+    <header>
         <input type="checkbox" name="menu_checkbox" id="menu_btn">
         <label for="menu_btn">MENU</label>
 
@@ -44,118 +48,148 @@
     </header>
 
     <main>
-        <section id="presentation" class="grid-container">
-            <div class="title">
-                <h2 class="alt-font">Resume</h2>
-                <h3>About me</h3>
-            </div>
-
-            <div id="contact">
-                <div>
-                    <img src="./resources/icons/address.svg" alt="pin_icon" class="icon">
-                    <p class="can-select">43 rue de Rennes<br>35510 Cesson-Sévigné</p>
+        <section id="presentation">
+            <div class="grid-container">
+                <div class="title">
+                    <h2 class="alt-font">Resume</h2>
+                    <h3>About me</h3>
                 </div>
-
-                <div>
-                    <img src="./resources/icons/phone.svg" alt="phone_icon" class="icon">
-                    <p class="can-select">06.16.64.16.09</p>
+    
+                <div id="contact">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="can-select">43 rue de Rennes<br>35510 Cesson-Sévigné</p>
+                    </div>
+    
+                    <div>
+                        <i class="fas fa-phone-alt"></i>
+                        <p class="can-select">06.16.64.16.09</p>
+                    </div>
+    
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p class="can-select">jaulin.gregory@gmail.com</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="./resources/icons/mail.svg" alt="mail_icon" class="icon">
-                    <p class="can-select">jaulin.gregory@gmail.com</p>
+    
+                <div id=descr>
+                    <p>
+                        Passionné d'informatique et de nouvelles technologies en général depuis mon enfance, c'est à partir
+                        du lycée que j'ai commencé à me tourner vers le développement.<br><br>                    
+                        J'ai débuté mon apprentissage avec <strong>Java</strong>, d'abord en autodidacte, puis je me suis dirigé vers 
+                        <a href="https://istic.univ-rennes1.fr/licence-informatique" target="_blank" rel="noopener noreferrer">une formation</a>
+                        dédiée au développement, où j'ai pu apprendre différentes méthodes de travail 
+                        <em>(méthode dite <strong>AGILE</strong> notamment)</em> et travailler également de nouveaux langages.<br><br>
+                        Tout juste diplômé et désireux d'acquérir de nouvelles compétences, je suis ouvert à de nouvelles 
+                        opportunités professionnelles, au niveau <strong>Back-End</strong> ou <strong>Front-End</strong>.
+                    </p>
                 </div>
-            </div>
-
-            <div id=descr>
-                <p>
-                    Passionné d'informatique et de nouvelles technologies en général depuis mon enfance, c'est à partir
-                    du lycée que j'ai commencé à me tourner vers le développement.<br><br>                    
-                    J'ai débuté mon apprentissage avec <strong>Java</strong>, d'abord en autodidacte, puis je me suis dirigé vers 
-                    <a href="https://istic.univ-rennes1.fr/licence-informatique" target="_blank" rel="noopener noreferrer">une formation</a>
-                    dédiée au développement, où j'ai pu apprendre différentes méthodes de travail 
-                    <em>(méthode dite <strong>AGILE</strong> notamment)</em> et travailler également de nouveaux langages.<br><br>
-                    Tout juste diplômé et désireux d'acquérir de nouvelles compétences, je suis ouvert à de nouvelles 
-                    opportunités professionnelles, au niveau <strong>Back-End</strong> ou <strong>Front-End</strong>.
-                </p>
             </div>
         </section>
 
         <section id="knowledge">
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="./resources/icons/gear.svg" alt="gear_icon" class="icon">
+                    <img src="./resources/icons/gear.svg" class="icon">
                     <h4>Tools</h4>
                     <p>I used to work with MongoDB, MySQL<br>and on both Linux and Windows.</p>
                     <ul class="icon-list">
                         <li class="icon" alt="MongoDB">
-                            <img src="./resources/icons/mongodb.svg" alt="MongoDB" class="icon no-wrap">
+                            <img src="./resources/icons/mongodb.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="Linux">
-                            <img src="./resources/icons/tux.svg" alt="Linux" class="icon no-wrap">
+                            <img src="./resources/icons/tux.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="Windows">
-                            <img src="./resources/icons/windows.svg" alt="Windows" class="icon no-wrap">
+                            <img src="./resources/icons/windows.svg" class="icon no-wrap">
                         </li>
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <img src="./resources/icons/devices.svg" alt="device_icon" class="icon">
+                    <img src="./resources/icons/devices.svg" class="icon">
                     <h4>Software</h4>
                     <p>I mainly use Eclipse, Visual Studio Code and WebStorm to develop and PuTTY as SSH Client.</p>
                     <ul class="icon-list">
                         <li class="icon" alt="Eclipse">
-                            <img src="./resources/icons/eclipse.svg" alt="Eclipse" class="icon no-wrap">
+                            <img src="./resources/icons/eclipse.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="WebStorm">
-                            <img src="./resources/icons/webstorm.svg" alt="WebStorm" class="icon no-wrap">
+                            <img src="./resources/icons/webstorm.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="VS Code">
-                            <img src="./resources/icons/vs_code.svg" alt="VS Code" class="icon no-wrap">
+                            <img src="./resources/icons/vs_code.svg" class="icon no-wrap">
                         </li>
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <img src="./resources/icons/languages.svg" alt="language_icon" class="icon">
+                    <img src="./resources/icons/languages.svg" class="icon">
                     <h4>Languages</h4>
                     <p>Mostly Java / Scala developer, I’ve been working with C, Javascript and web technologies (HTML5 and CSS3).</p>
                     <ul class="icon-list">
                         <li class="icon" alt="Javascript">
-                            <img src="./resources/icons/js.svg" alt="Javascript" class="icon no-wrap">
+                            <img src="./resources/icons/js.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="Java">
-                            <img src="./resources/icons/java.svg" alt="Java" class="icon no-wrap">
+                            <img src="./resources/icons/java.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="HTML5">
-                            <img src="./resources/icons/html.svg" alt="HTML5" class="icon no-wrap">
+                            <img src="./resources/icons/html.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="Scala">
-                            <img src="./resources/icons/scala.svg" alt="Scala" class="icon no-wrap">
+                            <img src="./resources/icons/scala.svg" class="icon no-wrap">
                         </li>
                         <li class="icon" alt="CSS3">
-                            <img src="./resources/icons/css.svg" alt="CSS3" class="icon no-wrap">
+                            <img src="./resources/icons/css.svg" class="icon no-wrap">
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="grid-container">
+        <section id="work">
+            <div class="title">
+                <h2 class="alt-font">Projects</h2>
+                <h3>My work</h3>
+            </div>
             
+            <div class="grid-container">               
+                <div class="card">
+                    <div class="txt">
+                        <h4>Fuze'Bot</h4>
+                        <p>Développement d'un bot Discord</p>
+                    </div>
+                    <button class='js-more'></button>
+                    <img src="./resources/icons/discord.svg" class="card-bg">
+                </div>
+
+                <div class="card">
+                    <div class="txt">
+                        <h4>Plugins Minecraft</h4>
+                        <p>Utilitaire et mini-jeux</p>
+                    </div>
+                    <button class='js-more'></button>
+                    <img src="./resources/icons/minecraft.png" class="card-bg">
+                </div>
+            </div>
         </section>
     </main>
 
+    <footer>
+        
+    </footer>
+
     <script>
-        const header = document.getElementById('header')
+        const header = document.getElementsByTagName('header')[0]
         const present = document.getElementById('presentation')
+        const work = document.getElementById('work')
         const nav_link = document.querySelectorAll('#nav-list li')
         const menu_btn = document.getElementById('menu_btn')
         const body = document.getElementsByTagName('body')[0]
 
-        body.style.setProperty('--inner-height', `${window.outerHeight}px`)
+        body.style.setProperty('--inner-height', `${window.innerHeight}px`)
 
         window.addEventListener('orientationchange', () => {
-            body.style.setProperty('--inner-height', `${window.outerHeight}px`)
+            body.style.setProperty('--inner-height', `${window.innerHeight}px`)
         })
 
         nav_link.forEach(elem => {
@@ -172,8 +206,27 @@
         document.addEventListener('scroll', () => {
             var scrollBarPosition = window.pageYOffset | document.body.scrollTop
             
-            header.style.setProperty('--header-bg-position', `${75 - (scrollBarPosition / header.offsetHeight * 25)}%`)
-            present.style.setProperty('--present-bg-position', `${75 - (scrollBarPosition / present.offsetHeight * 25)}%`)
+            header.style.setProperty('--bg-position', `${75 - (scrollBarPosition / header.offsetHeight * 25)}%`)
+            present.style.setProperty('--bg-position', `${75 - (scrollBarPosition / present.offsetHeight * 25)}%`)
+            work.style.setProperty('--bg-position', `${75 - (scrollBarPosition / present.offsetHeight * 25)}%`)
+        })
+
+        /* -------------------------------------------- */
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', event => {
+                card.style.cssText = `--mouseX: ${event.offsetX / card.clientWidth * 100}%;
+                                    --mouseY: ${event.offsetY / card.clientHeight * 100}%; 
+                                    --select-h: 300%; 
+                                    --select-w: 300%;`
+            })
+
+            card.addEventListener('mouseleave', event => {
+                card.style.cssText = `--mouseX: ${event.offsetX / card.clientWidth * 100}%;
+                                    --mouseY: ${event.offsetY / card.clientHeight * 100}%; 
+                                    --select-h: 0; 
+                                    --select-w: 0;`
+            })
         })
     </script>
 </body>

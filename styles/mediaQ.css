@@ -1,5 +1,9 @@
 @media (max-width: 1200px) {
     #presentation {
+        min-height: auto;
+    }
+
+    #presentation .grid-container {
         grid-template-areas: "title contact"
                              "descr descr";
         justify-items: center;
@@ -28,5 +32,6 @@
         grid-template-areas: "tools"
                              "software"
                              "languages";
+        row-gap: 3rem;
     }
 }

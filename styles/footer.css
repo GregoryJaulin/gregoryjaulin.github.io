@@ -1,0 +1,8 @@
+footer {
+    min-height: 20rem;
+    width: 100%;
+
+    background-color: var(--base_color);
+
+    box-shadow: -.5rem -3rem 3rem var(--base_color);
+}

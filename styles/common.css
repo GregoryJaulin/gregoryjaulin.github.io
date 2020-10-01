@@ -9,6 +9,7 @@
 }
 
 .title {
+    grid-area: title;
     height: fit-content;
     text-transform: uppercase;
 }

@@ -1,5 +1,5 @@
 header {
-    --header-bg-position: 75%;
+    --bg-position: 75%;
     
     position: relative;
     overflow: hidden;
@@ -19,10 +19,9 @@ header::before { /* Set background to ::before to change its opacity */
     height: 100%;
     width: 100%;
 
-    background: var(--header-bg-url) fixed no-repeat;
+    background: var(--header-bg-url) fixed center no-repeat;
     background-size: cover;
-    background-position-x: 48%;
-    background-position-y: var(--header-bg-position);
+    background-position-y: var(--bg-position);
     
     opacity: .5;
 }
@@ -44,6 +43,7 @@ label[for="menu_btn"] {
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: .25;
+    mix-blend-mode: exclusion;
 }
 
 label[for="menu_btn"]::before, label[for="menu_btn"]::after {

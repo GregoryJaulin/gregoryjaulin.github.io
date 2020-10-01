@@ -1,12 +1,199 @@
 #work {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2rem;
+    --bg-position: 75%;
+
+    position: relative;
+    top: -5rem;
+
+    min-height: var(--inner-height);
+    width: 100%;
+    padding: 5%;
+    padding-top: 10%;
+    color: var(--secondary_color);
+}
+
+#work::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    height: calc(100% + 5rem);
+    width: 100%;
+    background: url("../resources/datacenter.jpg") fixed no-repeat;
+    background-size: cover;
+    background-position-y: var(--bg-position);
+
+    opacity: .7;
+}
+
+#work .grid-container {
+    grid-template-columns: repeat(auto-fit, 30rem);
+    column-gap: 5rem;
+    row-gap: 5rem;
+    align-items: center;
     justify-content: center;
 
-    padding: 10rem 10rem;
-    height: 100vh;
+    padding-top: 7.5%;
 
-    text-align: center;
     font-size: 5rem;
     color: var(--secondary_color);
+}
+
+.card {
+    --mouseY: 0;
+    --mouseX: 0;
+    --select-h: 0;
+    --select-w: 0;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    height: 30rem;
+    width: 30rem;
+    padding: 2rem;
+    overflow: hidden;
+    text-align: center;
+    backdrop-filter: blur(1rem);
+    border-radius: .5rem;
+
+    box-shadow: .20rem .25rem .7rem var(--shadows);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: var(--mouseY);
+    left: var(--mouseX);
+
+    height: var(--select-h);
+    width: var(--select-w);
+
+    border-radius: 100%;
+    background-color: #7289DA;
+    opacity: .5;
+    filter: blur(1rem);
+    transform: translateX(-50%) translateY(-50%);
+    
+    transition: height .4s ease-in-out, width .4s ease-in-out;
+}
+
+.card .txt {
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+
+    margin: 0 1rem;
+    padding-bottom: .75rem 0;
+
+    transition: all .3s ease;
+}
+
+.card .txt h4 {
+    font-size: 2.5rem;
+    text-shadow: .2rem .2rem .4rem var(--shadows);
+}
+
+.card .txt p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card:hover .txt {
+    top: 57.5%;
+}
+
+.card button {
+    position: absolute;
+    bottom: -5rem;
+    
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--secondary_color);
+    background-color: transparent;
+
+    border-radius: 5rem;
+    border: solid .2rem var(--secondary_color);
+
+    transition: all .3s ease;
+}
+
+.card button:focus {
+    outline: none;
+}
+
+.card button::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 350%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    transition: content .3s .5s ease;
+}
+
+.card button:hover::before {
+    content: 'Read More';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card:hover button {
+    bottom: 2rem
+}
+
+.card button:hover {
+    width: 12rem;
+    color: var(--base_color);
+    background-color: var(--secondary_color);
+    box-shadow: .4rem .4rem .8rem var(--shadows);
+}
+
+.card:first-child {
+    align-self: flex-start;
+    justify-self: start;
+}
+
+.card:nth-child(2)::before {
+    background-color: rgb(113, 192, 67);
+}
+
+.card .card-bg {
+    position: absolute;
+    top: 50%;
+
+    width: 80%;
+
+    transform: translateY(-50%);
+
+    transition: all .2s ease;
+}
+
+.card:hover .card-bg {
+    top: 30%;
+
+    width: 60%;
+}
+
+.card .more {
+    display: none;
 }
