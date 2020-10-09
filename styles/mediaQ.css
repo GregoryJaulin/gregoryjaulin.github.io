@@ -18,13 +18,18 @@
 
 @media (max-width: 800px) {
     :root {
-        font-size: 50%;
+        font-size: 30%;
         --header-bg-url: url("../resources/dev.jpg");
         --present-bg-url: url("../resources/about.jpg");
     }
 
     .title h2 {
-        font-size: 5rem;
+        font-size: 4.5rem;
+    }
+
+    .title h3 {
+        top: -1rem;
+        font-size: 2rem;
     }
 
     #knowledge .grid-container {
@@ -32,6 +37,12 @@
                              "software"
                              "languages";
         row-gap: 3rem;
+    }
+
+    
+    #credits {
+        align-self: center;
+        margin: 1rem 0;
     }
 }
 

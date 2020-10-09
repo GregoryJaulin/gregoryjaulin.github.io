@@ -52,11 +52,12 @@ a {
 body {
     --inner-height: 100vh;
     
+    overflow-x: hidden;
     background-color: var(--base_color);
 }
 
 body.project-visible {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 strong, em {
