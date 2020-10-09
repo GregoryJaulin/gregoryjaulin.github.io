@@ -45,7 +45,7 @@
     align-items: start;
 }
 
-#contact div {
+#contact > * {
     display: flex;
     align-items: center;
 
@@ -54,9 +54,13 @@
     font-weight: 400;
 }
 
-#contact div i {
+#contact > * > i {
     font-size: 2.75rem;
-    margin: 2.5%;
+    margin: 5%;
+}
+
+#contact a:hover {
+    opacity: .75;
 }
 
 /* -------------------------------------------------- */
@@ -68,7 +72,7 @@
     position: relative;
 
     text-align: justify;
-    font-size: 2.75rem;
+    font-size: 1.75rem;
     height: fit-content;
     width: 90%;
 
@@ -76,10 +80,6 @@
     backdrop-filter: blur(.75rem);
 
     box-shadow: 2rem 2rem 5rem var(--shadows);
-}
-
-#descr strong {
-    font-weight: 600;
 }
 
 #descr::before {
@@ -97,13 +97,12 @@
     border: solid .2rem var(--secondary_color); 
 }
 
-#descr p a {
-    position: relative;
+#descr > a {
     display: inline-block;
     font-size: inherit;
     color: #8a6e5d;
 }
 
-#descr p a:hover {
+#descr > a:hover {
     color: var(--secondary_color_op);
 }

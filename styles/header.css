@@ -38,6 +38,8 @@ label[for="menu_btn"] {
     right: 3rem;
     z-index: 3;
 
+    cursor: pointer;
+
     width: 7.5rem;
     color: var(--secondary_color);
     font-size: 1.5rem;
@@ -111,6 +113,8 @@ input[id="menu_btn"]:checked ~ #navbar {
     display: flex;
     flex-direction: column;
 
+    font-size: 7.5rem;
+
     list-style-type: none;
     color: inherit;
 }
@@ -122,6 +126,10 @@ input[id="menu_btn"]:checked ~ #navbar {
     margin: 3rem 0;
 }
 
+#nav-list > li:hover {
+    color: var(--secondary_color_op);
+}
+
 #nav-list > li:after {
     content: '';
     position: absolute;
@@ -130,7 +138,7 @@ input[id="menu_btn"]:checked ~ #navbar {
 
     height: .01rem;
     width: 10rem;
-    background-color:var(--secondary_color);
+    background-color: var(--secondary_color);
     opacity: .5;
 
     transform: translateX(-50%);
@@ -138,6 +146,31 @@ input[id="menu_btn"]:checked ~ #navbar {
 
 #nav-list > li:last-child:after { /* Keep separation only between 2 elements */
     display: none;
+}
+
+/* -------------------------------------------------- */
+
+.languages {
+    position: absolute;
+    bottom: 2.5rem; right: 2.5rem;
+
+    display: flex;
+    font-size: 1.5rem;
+    opacity: .75;
+}
+
+.languages a {
+    padding: 0 1rem;
+
+    border-right: solid .2rem var(--secondary_color);
+}
+
+.languages a:hover {
+    color: var(--secondary_color_op);
+}
+
+.languages a:last-child {
+    border-right: none;
 }
 
 /* -------------------------------------------------- */

@@ -13,13 +13,12 @@
     #knowledge .grid-container {
         grid-template-areas: "tools software"
                              "languages languages";
-        row-gap: 0rem;
     }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 800px) {
     :root {
-        font-size: 40%;
+        font-size: 50%;
         --header-bg-url: url("../resources/dev.jpg");
         --present-bg-url: url("../resources/about.jpg");
     }
@@ -33,5 +32,19 @@
                              "software"
                              "languages";
         row-gap: 3rem;
+    }
+}
+
+@media (orientation: landscape) and  (max-height: 500px) {
+    #project-wrapper .grid-container {
+        max-width: 40rem;
+    }
+
+    .pictures {
+        max-height: 20rem;
+    }
+
+    #project-wrapper p {
+        max-height: 20rem;
     }
 }

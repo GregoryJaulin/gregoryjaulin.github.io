@@ -42,6 +42,7 @@ a {
     display: block;
     text-decoration: none;
     color: inherit;
+    font-size: inherit;
 }
 
 .alt-font {
@@ -54,8 +55,28 @@ body {
     background-color: var(--base_color);
 }
 
+body.project-visible {
+    overflow: hidden;
+}
+
 strong, em {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+}
+
+strong {
+    font-weight: 600;
+}
+
+li {
+    list-style-type: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+span {
+    font-size: 100%;
 }

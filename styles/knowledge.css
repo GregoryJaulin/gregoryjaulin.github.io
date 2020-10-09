@@ -32,7 +32,6 @@
     grid-template-areas: "tools software languages";
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     column-gap: 3rem;
-    row-gap: 3rem;
 
     position: relative;
     height: fit-content;
