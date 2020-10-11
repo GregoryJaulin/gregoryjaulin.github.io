@@ -22,22 +22,22 @@
 <body>
     <header>
         <input type="checkbox" name="menu_checkbox" id="menu_btn">
-        <label for="menu_btn">MENU</label>
+        <label for="menu_btn" class="anim-right">MENU</label>
 
         <nav class="desktop-3">
             <ul>
-                <li data-link="#presentation" data-txt="ABOUT ME"><a href="#presentation">ABOUT ME</a></li>
-                <li data-link="#knowledge" data-txt="KNOWLEDGE"><a href="#knowledge">KNOWLEDGE</a></li>
-                <li data-link="#work" data-txt="PROJECTS"><a href="#work">PROJECTS</a></li>
+                <li data-link="#presentation" data-txt="ABOUT ME"><a href="en/#presentation">ABOUT ME</a></li>
+                <li data-link="#knowledge" data-txt="KNOWLEDGE"><a href="en/#knowledge">KNOWLEDGE</a></li>
+                <li data-link="#work" data-txt="PROJECTS"><a href="en/#work">PROJECTS</a></li>
             </ul>
         </nav>
 
-        <div id="names" class="desktop-1">
+        <div id="names" class="desktop-1 anim-top anim-back">
             <h1 class="alt-font">Jaulin Grégory</h1>
             <h2>Backend Developer</h2>
         </div>
 
-        <div class="languages">
+        <div class="languages anim-right">
             <a href="fr/">FR</a>
             <a href="en/">EN</a>
         </div>
@@ -52,12 +52,12 @@
     <main>
         <section id="presentation" class="desktop-1 desktop-sp-3">
             <div class="grid-container">
-                <div class="title desktop-1">
+                <div class="title desktop-1 anim-left">
                     <h2 class="alt-font">Resume</h2>
                     <h3>About me</h3>
                 </div>
 
-                <div id="contact" class="desktop-3">
+                <div id="contact" class="desktop-3 anim-bottom">
                     <a class="fas fa-map-marker-alt can-select" href="https://goo.gl/maps/p98en2u6t2KNA3iaA" target="_blank" rel="noopener noreferrer">
                         <p>43 rue de Rennes<br>35510 Cesson-Sévigné</p>
                     </a>
@@ -71,7 +71,7 @@
                     </a>
                 </div>
 
-                <p id="descr" class="desktop-3">
+                <p id="descr" class="desktop-3 anim-right">
                     Passionate about computer science and new technologies in general since my childhood, I started coding
                     from high school.<br><br>
                     I began with <strong>Java</strong>, first as an autodidact, then I went to a 
@@ -87,7 +87,7 @@
 
         <section id="knowledge">
             <div class="grid-container">
-                <div class="item desktop-3">
+                <div class="item desktop-3 anim-top">
                     <img src="./resources/icons/gear.svg" class="icon">
                     <h4>Tools</h4>
                     <p>I used to work with MongoDB, MySQL<br>and on both Linux and Windows.</p>
@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item  desktop-3">
+                <div class="item  desktop-3 anim-top">
                     <img src="./resources/icons/devices.svg" class="icon">
                     <h4>Software</h4>
                     <p>I mainly use Eclipse, Visual Studio Code and WebStorm to develop and PuTTY as SSH Client.</p>
@@ -119,7 +119,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item  desktop-3">
+                <div class="item  desktop-3 anim-top">
                     <img src="./resources/icons/languages.svg" class="icon">
                     <h4>Languages</h4>
                     <p>Mostly Java / Scala developer, I’ve been working with C, Javascript and web technologies (HTML5
@@ -146,13 +146,13 @@
         </section>
 
         <section id="work" class="desktop-sp-3">
-            <div class="title desktop-1">
+            <div class="title desktop-1 anim-left">
                 <h2 class="alt-font">Projects</h2>
                 <h3>My work</h3>
             </div>
 
             <div class="grid-container">
-                <div class="card">
+                <div class="card anim-top">
                     <div class="txt">
                         <h4>Fuze'Bot</h4>
                         <p>Discord bot development.</p>
@@ -200,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card anim-top">
                     <div class="txt">
                         <h4>Minecraft Plugins</h4>
                         <p>Utilities and mini-games.</p>

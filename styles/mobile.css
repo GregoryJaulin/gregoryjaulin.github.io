@@ -109,10 +109,13 @@ header {
 
     position: relative;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     min-height: 50vh;
     max-height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 
 header::before {
@@ -249,14 +252,9 @@ nav ul li:not(:last-child)::after {
 /* -------------------------------------------------- */
 
 #names {
-    position: absolute;
-    top: 50%;
-
     width: 100%;
     text-transform: uppercase;
     text-align: center;
-
-    transform: translateY(-50%);
 }
 
 #names h1 {
@@ -565,17 +563,9 @@ nav ul li:not(:last-child)::after {
     opacity: 1;
 }
 
-#knowledge .grid-item:nth-child(1) {
-    grid-area: tools;
-}
-
-#knowledge .grid-item:nth-child(2) {
-    grid-area: software;
-}
-
-#knowledge .grid-item:nth-child(3) {
-    grid-area: languages;
-}
+#knowledge .item:nth-child(1) { transition-delay: .1s; }
+#knowledge .item:nth-child(2) { transition-delay: .4s; }
+#knowledge .item:nth-child(3) { transition-delay: .7s; }
 
 /* -------------------------------------------------- */
 
@@ -654,8 +644,7 @@ nav ul li:not(:last-child)::after {
 .card::before {
     content: '';
     position: absolute;
-    top: var(--mouseY);
-    left: var(--mouseX);
+    top: var(--mouseY); left: var(--mouseX);
 
     height: var(--select-h);
     width: var(--select-w);

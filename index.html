@@ -21,7 +21,7 @@
 <body>
     <header>
         <input type="checkbox" name="menu_checkbox" id="menu_btn">
-        <label for="menu_btn">MENU</label>
+        <label for="menu_btn" class="anim-right">MENU</label>
 
         <nav class="desktop-3">
             <ul>
@@ -31,12 +31,12 @@
             </ul>
         </nav>
 
-        <div id="names" class="desktop-1">
+        <div id="names" class="desktop-1 anim-top anim-back">
             <h1 class="alt-font">Jaulin Grégory</h1>
             <h2>Backend Developer</h2>
         </div>
 
-        <div class="languages">
+        <div class="languages anim-right">
             <a href="fr/">FR</a>
             <a href="en/">EN</a>
         </div>
@@ -51,12 +51,12 @@
     <main>
         <section id="presentation" class="desktop-1 desktop-sp-3">
             <div class="grid-container">
-                <div class="title desktop-1">
+                <div class="title desktop-1 anim-left">
                     <h2 class="alt-font">Biographie</h2>
                     <h3>À propos</h3>
                 </div>
 
-                <div id="contact" class="desktop-3">
+                <div id="contact" class="desktop-3 anim-bottom">
                     <a class="fas fa-map-marker-alt can-select" href="https://goo.gl/maps/p98en2u6t2KNA3iaA" target="_blank" rel="noopener noreferrer">
                         <p>43 rue de Rennes<br>35510 Cesson-Sévigné</p>
                     </a>
@@ -70,7 +70,7 @@
                     </a>
                 </div>
 
-                <p id="descr" class="desktop-3">
+                <p id="descr" class="desktop-3 anim-right">
                     Passionné d'informatique et de nouvelles technologies en général depuis mon enfance, c'est à partir
                     du lycée que j'ai commencé à me tourner vers le développement.<br><br>
                     J'ai débuté mon apprentissage avec <strong>Java</strong>, d'abord en autodidacte, puis je me suis
@@ -88,7 +88,7 @@
 
         <section id="knowledge">
             <div>
-                <div class="item desktop-3">
+                <div class="item desktop-3 anim-top">
                     <img src="./resources/icons/gear.svg" class="icon">
                     <h4>Outils</h4>
                     <p>J'ai l'habitude de travailler avec MongoDB et MySQL, autant sur Linux que Windows.</p>
@@ -104,7 +104,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item desktop-3">
+                <div class="item desktop-3 anim-top">
                     <img src="./resources/icons/devices.svg" class="icon">
                     <h4>Logiciels</h4>
                     <p>J'utilise principalement Eclipse, Visual Studio Code et WebStorm pour développer et PuTTY comme Client SSH.</p>
@@ -120,7 +120,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item desktop-3">
+                <div class="item desktop-3 anim-top">
                     <img src="./resources/icons/languages.svg" class="icon">
                     <h4>Langages</h4>
                     <p>Développeur principalement Java / Scala, j'ai eu l'occasion de travailler en C, Javascript les technologies web (HTML5
@@ -147,13 +147,13 @@
         </section>
 
         <section id="work" class="desktop-sp-3">
-            <div class="title desktop-1">
+            <div class="title desktop-1 anim-left">
                 <h2 class="alt-font">Projets</h2>
                 <h3>Mon travail</h3>
             </div>
 
             <div class="grid-container">
-                <div class="card">
+                <div class="card anim-top">
                     <div class="txt">
                         <h4>Fuze'Bot</h4>
                         <p>Développement d'un bot Discord.</p>
@@ -203,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card anim-top">
                     <div class="txt">
                         <h4>Plugins Minecraft</h4>
                         <p>Utilitaire et mini-jeux.</p>
@@ -293,6 +293,7 @@
     <script src="scripts/navlinks.js"></script>
     <script src="scripts/cards.js"></script>
     <script src="scripts/page-effects.js"></script>
+    <script src="scripts/scroll-anim.js"></script>
 </body>
 
 </html>
