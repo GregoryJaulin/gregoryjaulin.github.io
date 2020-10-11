@@ -4,6 +4,8 @@ const work = document.querySelector('#work')
 const up_btn = document.querySelector('#up-btn')
 
 document.addEventListener('scroll', () => {
+    if(screen && screen.width < 480) return;
+    
     let scrollBarPosition = window.pageYOffset | document.body.scrollTop
 
     header.style.setProperty('--bg-position', `${75 - (scrollBarPosition / header.offsetHeight * 25)}%`)

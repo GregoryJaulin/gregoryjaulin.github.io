@@ -1,61 +1,79 @@
-@media (max-width: 1200px) {
-    #presentation {
-        min-height: auto;
+/* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  or
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1281px) {
+    .desktop-1 { --base-size: 2; }
+    .desktop-2 { --base-size: 1.7; }
+    .desktop-3 { --base-size: 1.4; }
+
+    .desktop-sp-1 { --base-size-sp: 2; }
+    .desktop-sp-2 { --base-size-sp: 1.7; }
+    .desktop-sp-3 { --base-size-sp: 1.4; }
+
+    header {
+        height: 100vh;
     }
 
     #presentation .grid-container {
-        grid-template-areas: "title contact"
-                             "descr descr";
-        justify-items: center;
-        row-gap: 2rem;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 15rem 35rem;
+        grid-template-areas: "title descr"
+                             "contact descr";
     }
 
-    #knowledge .grid-container {
-        grid-template-areas: "tools software"
-                             "languages languages";
-    }
-}
-
-@media (max-width: 800px) {
-    :root {
-        font-size: 30%;
-        --header-bg-url: url("../resources/dev.jpg");
-        --present-bg-url: url("../resources/about.jpg");
+    #contact {
+        padding-left: calc(var(--base-size) * 2rem);
     }
 
-    .title h2 {
-        font-size: 4.5rem;
+    .card::before {
+        transition: height .4s ease-in-out, width .4s ease-in-out;
     }
 
-    .title h3 {
-        top: -1rem;
-        font-size: 2rem;
+    .card > button:hover {
+        width: 12rem;
     }
 
-    #knowledge .grid-container {
-        grid-template-areas: "tools"
-                             "software"
-                             "languages";
-        row-gap: 3rem;
-    }
-
-    
-    #credits {
-        align-self: center;
-        margin: 1rem 0;
+    .card > button:hover::before {
+        content: 'Read More';
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 
-@media (orientation: landscape) and  (max-height: 500px) {
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  or
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px  
+*/
+
+@media (min-width: 481px) and (max-width: 767px),
+        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    header {
+        height: 100vh;
+    }
+
     #project-wrapper .grid-container {
-        max-width: 40rem;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "pictures descr"
+                             "technos descr";
+        grid-template-rows: auto 1fr;
+
+        max-width: 100%;
     }
 
-    .pictures {
-        max-height: 20rem;
+    #project-wrapper .technos {
+        height: 100%;
+        background-color: transparent;
     }
 
-    #project-wrapper p {
-        max-height: 20rem;
+    .technos img {
+        width: 5rem;
     }
 }

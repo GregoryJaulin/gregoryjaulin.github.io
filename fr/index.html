@@ -12,14 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!--Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="styles/common.css">
-    <link rel="stylesheet" type="text/css" href="styles/header.css" />
-    <link rel="stylesheet" type="text/css" href="styles/presentation.css">
-    <link rel="stylesheet" type="text/css" href="styles/knowledge.css">
-    <link rel="stylesheet" type="text/css" href="styles/work.css">
+    <link rel="stylesheet" type="text/css" href="styles/mobile.css">
     <link rel="stylesheet" type="text/css" href="styles/mediaQ.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
 
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/bff90100a4.js" crossorigin="anonymous"></script>
@@ -30,15 +24,15 @@
         <input type="checkbox" name="menu_checkbox" id="menu_btn">
         <label for="menu_btn">MENU</label>
 
-        <nav id="navbar">
-            <ul id="nav-list">
+        <nav class="desktop-3">
+            <ul>
                 <li data-link="presentation" data-txt="ABOUT ME"><a href="#presentation">A PROPOS</a></li>
                 <li data-link="knowledge" data-txt="KNOWLEDGE"><a href="#knowledge">CONNAISSANCES</a></li>
                 <li data-link="work" data-txt="PROJECTS"><a href="#work">PROJETS</a></li>
             </ul>
         </nav>
 
-        <div id="names">
+        <div id="names" class="desktop-1">
             <h1 class="alt-font">Jaulin Grégory</h1>
             <h2>Backend Developer</h2>
         </div>
@@ -56,31 +50,28 @@
     </header>
 
     <main>
-        <section id="presentation">
+        <section id="presentation" class="desktop-1 desktop-sp-3">
             <div class="grid-container">
-                <div class="title">
+                <div class="title desktop-1">
                     <h2 class="alt-font">Biographie</h2>
                     <h3>À propos</h3>
                 </div>
 
-                <div id="contact">
-                    <a href="https://goo.gl/maps/p98en2u6t2KNA3iaA" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p class="can-select">43 rue de Rennes<br>35510 Cesson-Sévigné</p>
+                <div id="contact" class="desktop-3">
+                    <a class="fas fa-map-marker-alt can-select" href="https://goo.gl/maps/p98en2u6t2KNA3iaA" target="_blank" rel="noopener noreferrer">
+                        <p>43 rue de Rennes<br>35510 Cesson-Sévigné</p>
                     </a>
 
-                    <div>
-                        <i class="fas fa-phone-alt"></i>
-                        <p class="can-select">06.16.64.16.09</p>
+                    <div class="fas fa-phone-alt can-select">
+                        <p>06.16.64.16.09</p>
                     </div>
 
-                    <a href="mailto:jaulin.gregory@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-envelope"></i>
-                        <p class="can-select">jaulin.gregory@gmail.com</p>
+                    <a class="fas fa-envelope can-select" href="mailto:jaulin.gregory@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <p>jaulin.gregory@gmail.com</p>
                     </a>
                 </div>
 
-                <p id="descr">
+                <p id="descr" class="desktop-3">
                     Passionné d'informatique et de nouvelles technologies en général depuis mon enfance, c'est à partir
                     du lycée que j'ai commencé à me tourner vers le développement.<br><br>
                     J'ai débuté mon apprentissage avec <strong>Java</strong>, d'abord en autodidacte, puis je me suis
@@ -97,67 +88,67 @@
         </section>
 
         <section id="knowledge">
-            <div class="grid-container">
-                <div class="grid-item">
+            <div>
+                <div class="item desktop-3">
                     <img src="./resources/icons/gear.svg" class="icon">
                     <h4>Outils</h4>
                     <p>J'ai l'habitude de travailler avec MongoDB et MySQL, autant sur Linux que Windows.</p>
                     <ul class="icon-list">
                         <li class="icon" alt="MongoDB">
-                            <img src="./resources/icons/mongodb.svg" class="icon no-wrap">
+                            <img src="./resources/icons/mongodb.svg" class="icon">
                         </li>
                         <li class="icon" alt="Linux">
-                            <img src="./resources/icons/tux.svg" class="icon no-wrap">
+                            <img src="./resources/icons/tux.svg" class="icon">
                         </li>
                         <li class="icon" alt="Windows">
-                            <img src="./resources/icons/windows.svg" class="icon no-wrap">
+                            <img src="./resources/icons/windows.svg" class="icon">
                         </li>
                     </ul>
                 </div>
-                <div class="grid-item">
+                <div class="item desktop-3">
                     <img src="./resources/icons/devices.svg" class="icon">
                     <h4>Logiciels</h4>
                     <p>J'utilise principalement Eclipse, Visual Studio Code et WebStorm pour développer et PuTTY comme Client SSH.</p>
                     <ul class="icon-list">
                         <li class="icon" alt="Eclipse">
-                            <img src="./resources/icons/eclipse.svg" class="icon no-wrap">
+                            <img src="./resources/icons/eclipse.svg" class="icon">
                         </li>
                         <li class="icon" alt="WebStorm">
-                            <img src="./resources/icons/webstorm.svg" class="icon no-wrap">
+                            <img src="./resources/icons/webstorm.svg" class="icon">
                         </li>
                         <li class="icon" alt="VS Code">
-                            <img src="./resources/icons/vs_code.svg" class="icon no-wrap">
+                            <img src="./resources/icons/vs_code.svg" class="icon">
                         </li>
                     </ul>
                 </div>
-                <div class="grid-item">
+                <div class="item desktop-3">
                     <img src="./resources/icons/languages.svg" class="icon">
                     <h4>Langages</h4>
                     <p>Développeur principalement Java / Scala, j'ai eu l'occasion de travailler en C, Javascript les technologies web (HTML5
                         et CSS3).</p>
                     <ul class="icon-list">
                         <li class="icon" alt="Javascript">
-                            <img src="./resources/icons/js.svg" class="icon no-wrap">
+                            <img src="./resources/icons/js.svg" class="icon">
                         </li>
                         <li class="icon" alt="Java">
-                            <img src="./resources/icons/java.svg" class="icon no-wrap">
+                            <img src="./resources/icons/java.svg" class="icon">
                         </li>
                         <li class="icon" alt="HTML5">
-                            <img src="./resources/icons/html.svg" class="icon no-wrap">
+                            <img src="./resources/icons/html.svg" class="icon">
                         </li>
                         <li class="icon" alt="Scala">
-                            <img src="./resources/icons/scala.svg" class="icon no-wrap">
+                            <img src="./resources/icons/scala.svg" class="icon">
                         </li>
                         <li class="icon" alt="CSS3">
-                            <img src="./resources/icons/css.svg" class="icon no-wrap">
+                            <img src="./resources/icons/css.svg" class="icon">
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="work">
-            <div class="title">
+        <section id="work" class="desktop-sp-3">
+            <div class="title desktop-1">
                 <h2 class="alt-font">Projets</h2>
                 <h3>Mon travail</h3>
             </div>
@@ -174,10 +165,11 @@
 
                     <div class="content" style="display: none;">
                         <div class="grid-container">
-                            <h2 class="alt-font">Fuze'Bot</h2>
                             <button class="js-project-close"></button>
 
                             <div class="pictures">
+                                <h2 class="alt-font">Fuze'Bot</h2>
+
                                 <div class="slider">
                                     <img src="./resources/work/fuzebot-1.png" alt="">
                                     <img src="./resources/work/fuzebot-2.png" alt="">
@@ -223,18 +215,19 @@
 
                     <div class="content" style="display: none;">
                         <div class="grid-container">
-                            <h2 class="alt-font">Plugins Minecraft</h2>
                             <button class="js-project-close"></button>
 
                             <div class="pictures">
+                                <h2 class="alt-font">Plugins Minecraft</h2>
+
                                 <div class="slider">
                                     <img src="./resources/work/minecraft-1.png" alt="">
                                     <img src="./resources/work/minecraft-2.png" alt="">
                                     <img src="./resources/work/minecraft-3.png" alt="">
                                 </div>
 
-                                <i class="fas fa-chevron-left js-prev-btn wrap"></i>
-                                <i class="fas fa-chevron-right js-next-btn wrap"></i>
+                                <i class="fas fa-chevron-left js-prev-btn"></i>
+                                <i class="fas fa-chevron-right js-next-btn"></i>
                             </div>
                             <p>
                                 <span class="center">
@@ -268,26 +261,26 @@
     </main>
 
     <footer>
-        <i class="fas fa-chevron-up wrap" id="up-btn"></i>
+        <i class="fas fa-chevron-up" id="up-btn"></i>
         <ul id="links">
             <li>
                 <a href="https://github.com/GregoryJaulin" 
-                    target="_blank" rel="noopener noreferrer" class="fab fa-github wrap">
+                    target="_blank" rel="noopener noreferrer" class="fab fa-github">
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/grégory-jaulin-a3b0921b5/" 
-                    target="_blank" rel="noopener noreferrer" class="fab fa-linkedin-in wrap">
+                    target="_blank" rel="noopener noreferrer" class="fab fa-linkedin-in">
                 </a>
             </li>
             <li>
                 <a href="https://gitlab.com/Nekyoxx" 
-                    target="_blank" rel="noopener noreferrer" class="fab fa-gitlab wrap">
+                    target="_blank" rel="noopener noreferrer" class="fab fa-gitlab">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/Gregory_Jaulin" 
-                    target="_blank" rel="noopener noreferrer" class="fab fa-twitter wrap">
+                    target="_blank" rel="noopener noreferrer" class="fab fa-twitter">
                 </a>
             </li>
         </ul>

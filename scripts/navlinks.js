@@ -5,7 +5,7 @@ nav_link.forEach(elem => {
     elem.innerHTML = `<p>${elem.getAttribute("data-txt")}</p>`
 
     const scrollElem = document.getElementById(elem.getAttribute('data-link'))
-    if(scrollElem != undefined) 
+    if(scrollElem) 
         elem.addEventListener('click', () => {
             scrollElem.scrollIntoView()
             menu_btn.checked = false
