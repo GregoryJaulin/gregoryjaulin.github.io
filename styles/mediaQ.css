@@ -44,22 +44,20 @@
         font-weight: 600;
     }
 
-    [class*=anim-] {
-        opacity: 0;
-    }
+    body:not(.animations-disabled) [class*=anim-] { opacity: 0; }
 
-    .anim-top { transform: translateY(-4rem); }
-    .anim-bottom { transform: translateY(4rem); }
-    .anim-left { transform: translateX(-4rem); }
-    .anim-right { transform: translateX(4rem); }
-    .anim-back { transform: scale(.7); }
+    body:not(.animations-disabled) .anim-top { transform: translateY(-4rem); }
+    body:not(.animations-disabled) .anim-bottom { transform: translateY(4rem); }
+    body:not(.animations-disabled) .anim-left { transform: translateX(-4rem); }
+    body:not(.animations-disabled) .anim-right { transform: translateX(4rem); }
+    body:not(.animations-disabled) .anim-back { transform: scale(.7); }
 
-    .anim-back.anim-top { transform: scale(.7) translateY(-4rem); }
-    .anim-back.anim-bottom { transform: scale(.7) translateY(4rem); }
-    .anim-back.anim-left { transform: scale(.7) translateX(-4rem); }
-    .anim-back.anim-right { transform: scale(.7) translateX(4rem); }
+    body:not(.animations-disabled) .anim-back.anim-top { transform: scale(.7) translateY(-4rem); }
+    body:not(.animations-disabled) .anim-back.anim-bottom { transform: scale(.7) translateY(4rem); }
+    body:not(.animations-disabled) .anim-back.anim-left { transform: scale(.7) translateX(-4rem); }
+    body:not(.animations-disabled) .anim-back.anim-right { transform: scale(.7) translateX(4rem); }
 
-    [class*=anim-].reveal {
+    body:not(.animations-disabled) [class*=anim-].reveal {
         opacity: initial;
         transform: initial;
         transition-property: transform, opacity;

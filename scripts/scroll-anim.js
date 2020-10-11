@@ -1,5 +1,8 @@
 // Disable animations on mobile
 if(screen && screen.width > 480) {
+    //Allow animations only if JS enabled
+    document.querySelector("body").classList.remove("animations-disabled")
+
     const minRatio = .2
     const options = {
         root: null,
