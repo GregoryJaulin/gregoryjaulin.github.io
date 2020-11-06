@@ -454,11 +454,13 @@ nav ul li:not(:last-child)::after {
     font-weight: 300;
 }
 
-.cv-btn {
+#cv-btn {
     grid-area: cv;
     align-self: flex-start;
     justify-self: center;
+}
 
+#cv-btn a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -475,10 +477,10 @@ nav ul li:not(:last-child)::after {
     font-weight: 600;
     text-transform: uppercase;
 
-    transition: all .2s ease;
+    transition: all .3s ease-in-out;
 }
 
-.cv-btn:hover {
+#cv-btn a:hover {
     color: var(--base-color);
     background-color: var(--secondary-color);
     box-shadow: .4rem .4rem .8rem var(--shadows);
