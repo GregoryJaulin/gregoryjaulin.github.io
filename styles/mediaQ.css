@@ -21,9 +21,10 @@
 
     #presentation .grid-container {
         grid-template-columns: 2fr 3fr;
-        grid-template-rows: 15rem 35rem;
+        grid-template-rows: 15rem 15rem 15rem;
         grid-template-areas: "title descr"
-                             "contact descr";
+                             "contact descr"
+                             "cv descr";
     }
 
     #contact {
